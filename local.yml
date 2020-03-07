@@ -1,0 +1,9 @@
+# the file you just created is called playbook
+
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install htop # This instruction is know as play. name gives info about out tasks
+      # Therefore, make it descriptive
+      apt: name=htop # this instruction will only work on debian based systems
+    
