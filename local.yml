@@ -5,7 +5,7 @@
   tasks:
     - name: Install htop # This instruction is know as play. name gives info about out tasks
       # Therefore, make it descriptive
-      apt: name={{item}}# this instruction will only work on debian based systems
+      apt: name={{item}} # this instruction will only work on debian based systems
       with_items:
         - htop
         - mc
