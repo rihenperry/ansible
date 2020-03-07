@@ -3,5 +3,5 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: # This instruction is know as play. name gives info about out tasks. Therefore, make it descriptive
+    - name: Install packages # This instruction is know as play. name gives info about out tasks. Therefore, make it descriptive
       apt: name=['htop', 'mc', 'tmux'] # this instruction will only work on debian based systems
