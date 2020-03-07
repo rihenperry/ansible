@@ -1,13 +1,13 @@
 # the file you just created is called playbook
 
-- hosts: localhost,csudeb
+- hosts: localhost
   become: true
   tasks:
     - name: Install packages # This instruction is know as play. name gives info about out tasks.
       # Therefore, make it descriptive
       apt:
         name: "{{ item }}" # this instruction will only work on debian based systems
-        loop:
-          - htop
-          - mc
-          - tmux
+      loop:
+        - htop
+        - mc
+        - tmux
