@@ -1,0 +1,9 @@
+# the file you just created is called playbook
+
+- name: Install packages
+  apt:
+    name: "{{ item }}" # this instruction will only work on debian based systems
+    loop:
+      - htop
+      - mc
+      - tmux
