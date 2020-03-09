@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: localhost:csudeb
   become: true
   pre_tasks:
     - name: update repositories
